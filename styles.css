@@ -1,0 +1,31 @@
+body {
+  background-color: #191765;
+  color: #f5f5ff;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper > * {
+  flex: 1 1 auto;
+}
+
+/*
+   Header
+*/
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-box p {
+  font-family: Arial, Helvetica, sans-serif, Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+}
