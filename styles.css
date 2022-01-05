@@ -23,9 +23,9 @@ body {
 }
 
 .header-box p {
-  font-family: Arial, Helvetica, sans-serif, Roboto;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 16px;
+  font-family: helvetica, arial, sans-serif, Roboto;
 }
