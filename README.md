@@ -2,54 +2,47 @@
 
 # Portfolio
 
-> My Professional Portfolio
+>  Portfolio project website using figma template.
 
-![app-screenshot](https://user-images.githubusercontent.com/87197412/148370435-6422692f-5620-4a59-8f41-0d8da201d981.png)
+![app_screenshot](https://user-images.githubusercontent.com/87197412/148455645-e3c76743-05eb-4244-8cb4-057eb8de7ff1.png)
 
-This website describes my Professional Experience, Achievements and Personal Projects.
+
+This project involves Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
 ## Built With
 
-- Major languages:
-   * HTML
-   * CSS
-- Technologies used:
-   * Linter
+- Html
+- Css
+
+### Prerequisites
+
+- Text editor
+- Git
+- Github
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running
 
-## Prerequisites
-A web Browser (preferably Google Chrome)
+  You can clone this repo
 
-## Setup
+## Author
 
-Clone the GitHub Repository
+👤 **Ukwishaka Levy**
 
-## Usage
-
-Open index.html in Chrome
-
-## Authors
-
-👤 Ukwishaka Levy
-
-- GitHub: [@levy002](https://github.com/githubhandle)
-- Twitter: [@levy_ukwishaka](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/levy-ukwishaka-405391223)
-
+- [GitHub](https://github.com/levy002)
+- [LinkedIn](https://www.linkedin.com/in/levy-ukwishaka-405391223)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](.../).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+## 📝 License
 
- - Microverse
+This project is [MIT](./MIT.md) licensed.
