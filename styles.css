@@ -1,0 +1,145 @@
+body {
+  background-image: url(/images/Ellipse\ 18.png), url(/images/Ellipse\ 19.png);
+  background-position: top left, right 0% bottom 43%;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #191765;
+  box-sizing: border-box;
+  font-family: sans-serif, Roboto;
+  font-style: normal;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  justify-content: space-around;
+}
+
+main > * {
+  flex: 1;
+}
+
+/*
+   Header
+*/
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-box a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*
+  TOOLS & SKILLS
+*/
+
+.name-info {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.name-info h1 {
+  color: #7d73fc;
+  font-size: 40px;
+  text-align: center;
+}
+
+.name-info h2 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 20px;
+  color: #edecff;
+}
+
+.box-tools {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  font-style: normal;
+  color: #c8c8d4;
+}
+
+ul,
+li > * {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.box-tools > * {
+  padding: 10px 0;
+}
+
+.skills-item {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+
+.skills-item > * {
+  flex: 1 1 50%;
+}
+
+.skills-item > li {
+  color: #9490ff;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.items > * {
+  padding-bottom: 8px;
+  font-size: 15px;
+  line-height: 24px;
+  flex: 1 1 50%;
+  font-family: sans-serif, halvetica, arial, helvet;
+  color: #f5f5ff;
+}
+
+.items:nth-child(1) {
+  padding-top: 15px;
+}
+
+/*
+  SUPPORTING ITEMS & SOCIAL MEDIA
+*/
+
+.support_items {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 25px;
+  color: #a2a3ae;
+  font-size: 20px;
+}
