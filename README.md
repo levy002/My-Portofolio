@@ -4,8 +4,7 @@
 
 >  Portfolio project website using figma template.
 
-![app_screenshot](https://user-images.githubusercontent.com/87197412/148455645-e3c76743-05eb-4244-8cb4-057eb8de7ff1.png)
-
+![app-screenshot (2)](https://user-images.githubusercontent.com/87197412/148563825-21e23866-874e-47dc-8e8e-a0ecd01bcd32.png)
 
 This project involves Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
