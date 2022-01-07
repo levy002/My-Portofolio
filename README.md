@@ -1,10 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio
+# Portfolio project website using figma template.
 
->  Portfolio project website using figma template.
-
-![app-screenshot (2)](https://user-images.githubusercontent.com/87197412/148563825-21e23866-874e-47dc-8e8e-a0ecd01bcd32.png)
+![app_screenshot (2)](https://user-images.githubusercontent.com/87197412/148589816-a11b093e-f0f6-4f17-b964-27bd25133bb3.png)
 
 This project involves Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
