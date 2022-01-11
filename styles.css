@@ -38,6 +38,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif, Roboto;
   font-style: normal;
+  margin: 0;
 }
 
 main {
@@ -60,6 +61,8 @@ main > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .header-box a {
@@ -258,6 +261,10 @@ li > * {
   color: #fff;
 }
 
+.project button {
+  margin-top: 15px;
+}
+
 button {
   padding: 15px;
   border: 1px hidden;
@@ -282,18 +289,37 @@ button:active {
   background: #5e42d7;
 }
 
-.formar {
+footer {
+  text-align: center;
+}
+
+.contact-text {
+    width: 90%;
+    margin: 0 auto;
+}
+
+form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
+  width: 90%;
+  margin: 5%;
+  
+}
+
+form input, textarea {
   width: 100%;
 }
 
-.formar input, textarea {
-  width: 100%;
-}
-
-.formar ul, li {
+form ul, li {
   margin-bottom: 17px;
+}
+
+#footer-line {
+  width: 100%;
+}
+
+#footer-line img {
+  width: 100%;
 }

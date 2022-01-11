@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/07a5c1782d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/07a5c1782d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="header-box">
+      <a href="#">Welcome</a>
+      <nav>
+        <img src="/images/Menu-icon.png" alt="Menu icon" />
+      </nav>
+    </header>
     <main>
-      <header class="header-box">
-        <a href="#">Welcome</a>
-        <nav>
-          <img src="/images/Menu-icon.png" alt="Menu icon" />
-        </nav>
-      </header>
       <section class="name-info">
         <h1>Ukwishaka Levy</h1>
         <h2>Software Developer</h2>
@@ -27,7 +30,6 @@
           you need coded, don’t hesitate to contact me.
         </h4>
         <img src="/images/vector-line.png" alt="line" />
-         <hr>
         <div>
           <ul class="skills-item">
             <li class="items-title">
@@ -227,74 +229,84 @@
           </li>
         </ul>
       </section>
-
-      <footer class="contact">
-        <div class="contact-text">
-          <h2>CONTACT US</h2>
-          <p>
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-        </div>
-
-        <form action="https://formspree.io/f/xbjwlnpa" method="post" class="formar">
-          <ul>
-            <li>
-              <label for="text"></label>
-              <input type="text" placeholder="Text input" maxlength="30"/>
-            </li>
-            <li>
-              <label for="email"></label>
-              <input
-                type="email"
-                placeholder="jeremy@gmail.com"
-                name="user_email" required
-              />
-            </li>
-            <li>
-              <label for="text"></label>
-              <textarea type="text" placeholder="Enter text here" maxlength="500"></textarea>
-            </li>
-            </ul>
-            <div>
-              <button value="Submit">See Project</button>
-            </div>        
-        </form>
-        <hr>
-        <div class="support_items">
-          <ul class="social-media">
-            <li>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-angellist"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="#">
-                <i class="fab fa-medium-m"></i>
-              </a>
-            </li>
-            <li></li>
-          </ul>
-          <a href="#">emailhere@email.com</a>
-        </div>
-      </footer>
     </main>
+    <footer class="contact">
+      <div class="contact-text">
+        <h2>CONTACT US</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+
+      <form
+        action="https://formspree.io/f/xbjwlnpa"
+        method="post"
+        class="formar"
+      >
+        <ul>
+          <li>
+            <label for="text"></label>
+            <input type="text" placeholder="Text input" maxlength="30" />
+          </li>
+          <li>
+            <label for="email"></label>
+            <input
+              type="email"
+              placeholder="jeremy@gmail.com"
+              name="user_email"
+              required
+            />
+          </li>
+          <li>
+            <label for="text"></label>
+            <textarea
+              type="text"
+              placeholder="Enter text here"
+              maxlength="500"
+            ></textarea>
+          </li>
+        </ul>
+        <div>
+          <button value="Submit">See Project</button>
+        </div>
+      </form>
+      <div id="footer-line">
+        <img src="/images/vector-line.png" alt="line" />
+      </div>
+      <div class="support_items">
+        <ul class="social-media">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-angellist"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </li>
+          <li></li>
+        </ul>
+        <a href="#">emailhere@email.com</a>
+      </div>
+    </footer>
   </body>
 </html>
