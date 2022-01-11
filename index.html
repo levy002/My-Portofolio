@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header-box">
-      <a href="#">Welcome</a>
+      <a href="#" id="logo">Welcome</a>
       <nav>
         <img src="/images/Menu-icon.png" alt="Menu icon" />
       </nav>
@@ -250,12 +250,10 @@
         class="formar"
       >
         <ul>
-          <li>
-            <label for="text"></label>
+          <li id="user-name">
             <input type="text" placeholder="Text input" maxlength="30" />
           </li>
-          <li>
-            <label for="email"></label>
+          <li id="email">
             <input
               type="email"
               placeholder="jeremy@gmail.com"
@@ -263,17 +261,15 @@
               required
             />
           </li>
-          <li>
-            <label for="text"></label>
+          <li id="user-message">
             <textarea
-              type="text"
               placeholder="Enter text here"
               maxlength="500"
             ></textarea>
           </li>
         </ul>
         <div>
-          <button value="Submit">See Project</button>
+          <button value="Submit" type="submit">See Project</button>
         </div>
       </form>
       <div id="footer-line">
