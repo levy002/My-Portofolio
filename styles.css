@@ -1,6 +1,5 @@
 body {
   background-image:
-
     url(/images/Ellipse\ 18.png),
     url(/images/Ellipse\ 19.png),
     url(/images/ellipse\ 30.png),
@@ -8,15 +7,13 @@ body {
     url(/images/Ellipse\ 32.png),
     url(/images/Ellipse\ 33.png);
   background-position:
-
     top left,
-    right 0% top 13%,
-    top 38% left,
-    right 0% bottom 44%,
-    left 0% bottom 25%,
-    right 0% bottom 6%;
+    right 0% top 10%,
+    top 33% left,
+    right 0% bottom 52%,
+    left 0% bottom 38%,
+    right 0% bottom 22%;
   background-size:
-
     auto,
     auto,
     60% auto,
@@ -24,7 +21,6 @@ body {
     63% auto,
     50% auto;
   background-repeat:
-
     no-repeat,
     no-repeat,
     no-repeat,
@@ -38,6 +34,7 @@ body {
   box-sizing: border-box;
   font-family: sans-serif, Roboto;
   font-style: normal;
+  margin: 0;
 }
 
 main {
@@ -60,9 +57,11 @@ main > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.header-box a {
+#logo {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -131,12 +130,6 @@ li > * {
   flex: 1 1 50%;
 }
 
-.skills-item > li {
-  color: #9490ff;
-  font-size: 12px;
-  line-height: 24px;
-}
-
 .items > * {
   padding-bottom: 8px;
   font-size: 15px;
@@ -166,7 +159,12 @@ li > * {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+i {
+  color: #fff;
+  font-size: 22px;
 }
 
 .work-direction {
@@ -249,21 +247,15 @@ li > * {
   align-items: center;
 }
 
-.project-tools li {
-  font-family: sans-serif, Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-}
-
 button {
   padding: 15px;
   border: 1px hidden;
   outline: none;
-  margin-top: 15px;
   color: #edecff;
+}
+
+.project button {
+  margin-top: 15px;
 }
 
 button:enabled {
@@ -281,4 +273,120 @@ button:hover {
 
 button:active {
   background: #5e42d7;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.contact-text {
+  width: 90%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
+  margin: 50px auto;
+}
+
+form input,
+textarea {
+  width: 100%;
+  border: 1px hidden;
+  color: #81818c;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+form ul,
+li {
+  margin-bottom: 17px;
+}
+
+#footer-line {
+  width: 100%;
+  margin-top: 60px;
+}
+
+#footer-line img {
+  width: 100%;
+}
+
+.contact-text h2 {
+  font-size: 32px;
+  line-height: 44px;
+  color: #9390ff;
+}
+
+.contact-text p {
+  color: #f5f5ff;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+footer a {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+#user-name {
+  padding: 10px;
+  outline: none;
+  border: 1px hidden;
+  background: #e5e5e5;
+}
+
+input[type="text"] {
+  padding: 5px;
+  background: #e5e5e5;
+  outline: none;
+}
+
+#email {
+  padding: 10px;
+  background: #f7f3ff;
+}
+
+input[type="email"] {
+  background: #f7f3ff;
+  padding: 5px;
+  outline: none;
+}
+
+#user-message {
+  padding: 10px;
+  border: 1px hidden;
+  background: #fff;
+}
+
+textarea {
+  height: 120px;
+  background: #fff;
+  outline: none;
+}
+
+.project-tools li {
+  font-family: sans-serif, Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.skills-item > li {
+  color: #9490ff;
+  font-size: 12px;
+  line-height: 24px;
 }

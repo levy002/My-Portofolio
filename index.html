@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/07a5c1782d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="header-box">
+      <a href="#" id="logo">Welcome</a>
+      <nav>
+        <img src="/images/Menu-icon.png" alt="Menu icon" />
+      </nav>
+    </header>
     <main>
-      <header class="header-box">
-        <a href="#">Welcome</a>
-        <nav>
-          <img src="/images/Menu-icon.png" alt="Menu icon" />
-        </nav>
-      </header>
       <section class="name-info">
         <h1>Ukwishaka Levy</h1>
         <h2>Software Developer</h2>
       </section>
       <section class="box-tools">
         <h4 id="intro">
-          I can help you build a product , feature or website Look through some
+          I can help you build a product, feature or website Look through some
           of my work and experience! If you like what you see and have a project
           you need coded, don’t hesitate to contact me.
         </h4>
         <img src="/images/vector-line.png" alt="line" />
-
         <div>
           <ul class="skills-item">
             <li class="items-title">
@@ -60,52 +63,46 @@
             </li>
           </ul>
         </div>
-
         <img src="/images/vector-line.png" alt="line" />
       </section>
       <div class="support_items">
         <ul class="social-media">
           <li>
-            <a href="#"><img src="/images/Github.png" alt="Github" /></a>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
           </li>
-
-          <li></li>
           <li>
-            <a href="#"
-              ><img src="/images/Icon-Linkedin.png" alt="Linkedin"
-            /></a>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
           </li>
-
-          <li></li>
           <li>
-            <a href="#"><img src="/images/Vector3.png" alt="Angelist" /></a>
+            <a href="#">
+              <i class="fab fa-angellist"></i>
+            </a>
           </li>
-
-          <li></li>
           <li>
-            <a href="#"><img src="/images/twitter.png" alt="Twitter" /></a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
           </li>
-
-          <li></li>
           <li>
-            <a href="#"><img src="/images/MVector.png" alt="Medium" /></a>
+            <a href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
           </li>
-
-          <li></li>
         </ul>
-
         <div class="work-direction">
           <img src="/images/Arrow.png" alt="down-arrow" />
           <span>Work</span>
         </div>
       </div>
-
       <section class="work">
         <div id="work-title">
           <h2>MY RECENT <span id="break">WORK</span></h2>
           <img src="/images/vector-line.png" alt="line" />
         </div>
-
         <ul class="all_projects">
           <li class="project">
             <div class="app_image">
@@ -238,5 +235,76 @@
         </ul>
       </section>
     </main>
+    <footer>
+      <div class="contact-text">
+        <h2>CONTACT US</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </div>
+      <form
+        action="https://formspree.io/f/xbjwlnpa"
+        method="post"
+        class="formar"
+      >
+        <ul>
+          <li id="user-name">
+            <input type="text" placeholder="Text input" maxlength="30" required/>
+          </li>
+          <li id="email">
+            <input
+              type="email"
+              placeholder="jeremy@gmail.com"
+              name="user_email"
+              required
+            />
+          </li>
+          <li id="user-message">
+            <textarea
+              placeholder="Enter text here"
+              maxlength="500"
+            ></textarea>
+          </li>
+        </ul>
+        <div>
+          <button value="Submit" type="submit">See Project</button>
+        </div>
+      </form>
+      <div id="footer-line">
+        <img src="/images/vector-line.png" alt="line" />
+      </div>
+      <div class="support_items">
+        <ul class="social-media">
+          <li>
+            <a href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-angellist"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-medium-m"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#">emailhere@email.com</a>
+      </div>
+    </footer>
   </body>
 </html>
