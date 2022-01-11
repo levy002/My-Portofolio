@@ -262,7 +262,6 @@ button {
   padding: 15px;
   border: 1px hidden;
   outline: none;
-  margin-top: 15px;
   color: #edecff;
 }
 
@@ -281,4 +280,20 @@ button:hover {
 
 button:active {
   background: #5e42d7;
+}
+
+.formar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+.formar input, textarea {
+  width: 100%;
+}
+
+.formar ul, li {
+  margin-bottom: 17px;
 }
