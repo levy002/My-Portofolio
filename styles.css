@@ -419,14 +419,9 @@ textarea {
 @media only screen and (min-width:992px) {
 
  .header-box {
-   width: 90%;
+   width: 85%;
    margin: 50px auto;
  }
-
-  main{
-    width: 80%;
-    margin: 0 auto;
-  }
 
   .nav-container {
     display: flex;
@@ -451,7 +446,7 @@ textarea {
   }
 
   .headline-wrapper > * {
-    width: 50%;
+    width: 45%;
     margin: 0 auto;
   }
 
@@ -510,10 +505,11 @@ textarea {
 }
 
 .support_items {
+  width: 80%;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin: 100px 0 200px;
+  margin: 100px auto 200px;
 }
 
 .work-direction {
@@ -532,5 +528,88 @@ textarea {
 
 .work-direction img {
   color: #C4C4C4;
+}
+
+.work {
+  width: 92%;
+  margin: 0 auto;
+  margin-bottom: 140px;
+}
+
+#work-title {
+  margin-bottom: 90px;
+}
+
+#work-title h2 {
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 114px;
+  margin: 0 0 30px;
+}
+
+#work-title h2::first-letter {
+text-transform: uppercase;
+}
+
+#break {
+display:inline;
+}
+
+.all_projects {
+  grid-gap: 90px;
+}
+.project {
+  flex-flow: row;
+  width: 100%;
+  gap: 4%;
+  margin: 0;
+}
+
+.project:nth-child(even) {
+  flex-flow: row-reverse;
+}
+
+.app_image {
+  height: 100%;
+  width: 58%;
+}
+
+.app_image img {
+  height: 100%;
+}
+
+.project-body {
+  display: flex;
+  flex-flow: column;
+  width: 38%;
+  height: 100%;
+}
+
+.project-body h3 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+}
+
+.project-body p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  
+}
+
+.project-tools li {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.project-body button {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 }
