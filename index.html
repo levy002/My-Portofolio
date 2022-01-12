@@ -9,13 +9,20 @@
       src="https://kit.fontawesome.com/07a5c1782d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/07a5c1782d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header-box">
       <a href="#" id="logo">Welcome</a>
-      <nav>
+      <nav class="nav-container">
         <img src="/images/Menu-icon.png" alt="Menu icon" />
+        <a href="#">Portofolio</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </a>
       </nav>
     </header>
     <main>
@@ -65,7 +72,15 @@
         </div>
         <img src="/images/vector-line.png" alt="line" />
       </section>
+
+  
+      
       <div class="support_items">
+
+        <div class="work-direction arrow-1">
+          <img src="/images/Arrow.png" alt="down-arrow"/>
+          <span>Work</span>
+        </div>
         <ul class="social-media">
           <li>
             <a href="#">
@@ -94,7 +109,7 @@
           </li>
         </ul>
         <div class="work-direction">
-          <img src="/images/Arrow.png" alt="down-arrow" />
+          <img src="/images/Arrow.png" alt="down-arrow" id="arrow-2"/>
           <span>Work</span>
         </div>
       </div>
@@ -238,6 +253,7 @@
     <footer>
       <div class="contact-text">
         <h2>CONTACT US</h2>
+        <h2>Let's chat!</h2>
         <p>
           If you have an application you are interested in developing, a feature
           that you need built or a project that needs coding. I’d love to help
@@ -250,8 +266,13 @@
         class="formar"
       >
         <ul>
-          <li id="user-name">
+          <li id="user-name-1">
             <input type="text" placeholder="Text input" maxlength="30" required/>
+          </li>
+
+          <li id="user-name-2">
+            <input type="text" placeholder="First name" maxlength="30" required/>
+            <input type="text" placeholder="Last name" maxlength="30" required/>
           </li>
           <li id="email">
             <input

@@ -70,6 +70,10 @@ main > * {
   color: #fff;
 }
 
+nav a {
+  display: none;
+}
+
 /*
   TOOLS & SKILLS
 */
@@ -325,6 +329,10 @@ li {
   color: #9390ff;
 }
 
+.contact-text h2:nth-child(2) {
+  display: none;
+}
+
 .contact-text p {
   color: #f5f5ff;
   font-size: 18px;
@@ -340,14 +348,18 @@ footer a {
   font-family: "Roboto", sans-serif;
 }
 
-#user-name {
+#user-name-1 {
   padding: 10px;
   outline: none;
   border: 1px hidden;
   background: #e5e5e5;
 }
 
-input[type="text"] {
+#user-name-2 {
+  display: none;
+}
+
+#user-name-1 input[type="text"] {
   padding: 5px;
   background: #e5e5e5;
   outline: none;
@@ -389,4 +401,47 @@ textarea {
   color: #9490ff;
   font-size: 12px;
   line-height: 24px;
+}
+.arrow-1 {
+  display: none;
+}
+
+/*
+  DESKTOP VERSION
+*/
+
+@media only screen and (min-width:992px) {
+
+ .header-box {
+   width: 80%;
+   margin: 50px auto;
+ }
+
+  main{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  .nav-container a {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav-container img {
+    display: none;
+  }
+
 }
