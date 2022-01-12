@@ -40,7 +40,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 90%;
   margin: 0 auto;
 }
@@ -118,16 +117,15 @@ li > * {
 }
 
 .box-tools > * {
-  padding: 10px 0;
+  margin-top: 35px
 }
 
 .skills-item {
   display: flex;
-  flex-direction: row;
-  align-content: space-between;
-  justify-content: space-between;
+  flex-direction: row; 
+  justify-content: center;
   flex-wrap: wrap;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .skills-item > * {
@@ -135,7 +133,6 @@ li > * {
 }
 
 .items > * {
-  padding-bottom: 8px;
   font-size: 15px;
   line-height: 24px;
   flex: 1 1 50%;
@@ -143,8 +140,16 @@ li > * {
   color: #f5f5ff;
 }
 
+.skills-item ul > *:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .items:nth-child(1) {
-  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.items-title:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 /*
@@ -401,6 +406,7 @@ textarea {
   color: #9490ff;
   font-size: 12px;
   line-height: 24px;
+  font-family: 'Roboto', sans-serif;
 }
 .arrow-1 {
   display: none;
@@ -413,7 +419,7 @@ textarea {
 @media only screen and (min-width:992px) {
 
  .header-box {
-   width: 80%;
+   width: 90%;
    margin: 50px auto;
  }
 
@@ -425,7 +431,7 @@ textarea {
   .nav-container {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 25px;
   }
 
   .nav-container a {
@@ -444,4 +450,87 @@ textarea {
     display: none;
   }
 
+  .headline-wrapper > * {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .name-info {
+    margin: 50px auto 50px;
+  }
+
+  .name-info h1 {
+    font-size: 50px;
+    line-height: 105.47px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .name-info h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+#intro {
+  line-height: 32px;
+}
+ 
+.skills-item {
+  margin: 0;
+}
+
+.skills-item > * {
+  flex: 1;
+  margin-left: 45px;
+}
+
+.skills-item > *:nth-child(1) {
+  margin-left: 10px;
+}
+
+.skills-item li {
+   font-size: 18px;
+   line-height:30px;
+   font-weight: 700;
+}
+
+.skills-item ul > * {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.arrow-1{
+  display: flex;
+  
+}
+
+.support_items {
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 0 200px;
+}
+
+.work-direction {
+  padding: 0;
+}
+
+.social-media > * {
+  margin: 0;
+}
+
+.work-direction span {
+  font-size: 20px;
+  font-weight: 500; 
+  color: #B3BAC5;
+}
+
+.work-direction img {
+  color: #C4C4C4;
+}
 }
