@@ -40,7 +40,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 90%;
   margin: 0 auto;
 }
@@ -68,6 +67,10 @@ main > * {
   line-height: 16px;
   text-decoration: none;
   color: #fff;
+}
+
+nav a {
+  display: none;
 }
 
 /*
@@ -114,16 +117,15 @@ li > * {
 }
 
 .box-tools > * {
-  padding: 10px 0;
+  margin-top: 35px;
 }
 
 .skills-item {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  padding-left: 15px;
+  margin-left: 15px;
 }
 
 .skills-item > * {
@@ -131,7 +133,6 @@ li > * {
 }
 
 .items > * {
-  padding-bottom: 8px;
   font-size: 15px;
   line-height: 24px;
   flex: 1 1 50%;
@@ -139,8 +140,16 @@ li > * {
   color: #f5f5ff;
 }
 
+.skills-item ul > *:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 .items:nth-child(1) {
-  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.items-title:nth-last-child(1) {
+  margin-bottom: 0;
 }
 
 /*
@@ -325,6 +334,10 @@ li {
   color: #9390ff;
 }
 
+.contact-text h2:nth-child(2) {
+  display: none;
+}
+
 .contact-text p {
   color: #f5f5ff;
   font-size: 18px;
@@ -340,14 +353,18 @@ footer a {
   font-family: "Roboto", sans-serif;
 }
 
-#user-name {
+#user-name-1 {
   padding: 10px;
   outline: none;
   border: 1px hidden;
   background: #e5e5e5;
 }
 
-input[type="text"] {
+#user-name-2 {
+  display: none;
+}
+
+#user-name-1 input[type="text"] {
   padding: 5px;
   background: #e5e5e5;
   outline: none;
@@ -389,4 +406,321 @@ textarea {
   color: #9490ff;
   font-size: 12px;
   line-height: 24px;
+  font-family: "Roboto", sans-serif;
+}
+
+.arrow-1 {
+  display: none;
+}
+
+/*
+  DESKTOP VERSION
+*/
+
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    background: url(/images/two-circles-header.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: #191765;
+  }
+
+  .header-box {
+    width: 85%;
+    margin: 50px auto;
+  }
+
+  main {
+    background: url(/images/Group-elipse.png);
+    background-repeat: no-repeat;
+    background-position-y: 83%;
+    background-size: 100% 55%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .nav-container {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .nav-container a {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav-container img {
+    display: none;
+  }
+
+  .headline-wrapper > * {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .name-info {
+    margin: 50px auto 50px;
+  }
+
+  .name-info h1 {
+    font-size: 50px;
+    line-height: 105.47px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .name-info h2 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  #intro {
+    line-height: 32px;
+  }
+
+  .skills-item {
+    margin: 0;
+  }
+
+  .skills-item > * {
+    flex: 1;
+    margin-left: 45px;
+  }
+
+  .skills-item li {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .arrow-1 {
+    display: flex;
+  }
+
+  .support_items {
+    width: 80%;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto 200px;
+  }
+
+  .work-direction {
+    padding: 0;
+  }
+
+  .social-media > * {
+    margin: 0;
+  }
+
+  .work-direction span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #b3bac5;
+  }
+
+  .work-direction img {
+    color: #c4c4c4;
+  }
+
+  .work {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 140px;
+  }
+
+  #work-title {
+    margin-bottom: 90px;
+  }
+
+  #break {
+    display: inline;
+  }
+
+  .all_projects {
+    grid-gap: 90px;
+    width: 100%;
+  }
+
+  .project {
+    flex-flow: row;
+    width: 100%;
+    gap: 4%;
+    margin: 0;
+    height: 450px;
+  }
+
+  .project-body > * {
+    margin: 0;
+  }
+
+  .project:nth-child(even) {
+    flex-flow: row-reverse;
+  }
+
+  .app_image {
+    height: 100%;
+    width: 58%;
+  }
+
+  .app_image img {
+    height: 100%;
+  }
+
+  .project-body::before {
+    content: "";
+  }
+
+  .project-body {
+    width: 38%;
+    height: 100%;
+  }
+
+  .project:nth-child(1) .project-body {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .project-body h3 {
+    font-size: 37px;
+    line-height: 52px;
+    font-weight: 700;
+  }
+
+  .project-body p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .project-tools li {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .skills-item ul > * {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .skills-item > *:nth-child(1) {
+    margin-left: 10px;
+  }
+
+  .contact-text,
+  form {
+    width: 55%;
+    margin-bottom: 80px;
+  }
+
+  .contact-text h2:nth-child(1) {
+    display: none;
+  }
+
+  .contact-text h2:nth-child(2) {
+    display: contents;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 24px;
+  }
+
+  #work-title h2 {
+    text-transform: lowercase;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 114px;
+    margin: 0 0 30px;
+  }
+
+  #work-title h2::first-letter {
+    text-transform: uppercase;
+  }
+
+  .contact-text p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+
+  #user-name-1 {
+    display: none;
+  }
+
+  #user-name-2 {
+    display: contents;
+    display: flex;
+    gap: 20px;
+  }
+
+  #user-name-2:nth-child(1) {
+    color: #191765;
+  }
+
+  input[type="text"] {
+    padding: 15px;
+    outline: none;
+    color: #191765;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    border-radius: 2px;
+  }
+
+  #email {
+    border-radius: 2px;
+  }
+
+  input[type="email"],
+  textarea {
+    color: #6d6c70;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 400;
+    outline: none;
+  }
+
+  form button {
+    padding: 12px 50px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 50px;
+  }
+
+  footer .support_items {
+    width: 55%;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .project-body button {
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+  }
 }
