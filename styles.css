@@ -417,7 +417,7 @@ textarea {
   DESKTOP VERSION
 */
 
-@media only screen and (max-width: 1100px) and (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   html,
   body {
     height: 100%;
@@ -530,17 +530,6 @@ textarea {
     margin: 0;
   }
 
-  .skills-item ul > * {
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .skills-item > *:nth-child(1) {
-    margin-left: 10px;
-  }
-
   .work-direction span {
     font-size: 20px;
     font-weight: 500;
@@ -552,7 +541,7 @@ textarea {
   }
 
   .work {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     margin-bottom: 140px;
   }
@@ -567,12 +556,18 @@ textarea {
 
   .all_projects {
     grid-gap: 90px;
+    width: 100%;
   }
 
   .project {
     flex-flow: row;
     width: 100%;
     gap: 4%;
+    margin: 0;
+    height: 450px;
+  }
+
+  .project-body > * {
     margin: 0;
   }
 
@@ -589,15 +584,21 @@ textarea {
     height: 100%;
   }
 
+  .project-body::before {
+    content: "";
+  }
+
   .project-body {
-    display: flex;
-    flex-flow: column;
     width: 38%;
     height: 100%;
   }
 
+  .project:nth-child(1) .project-body {
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
   .project-body h3 {
-    font-size: 40px;
+    font-size: 37px;
     line-height: 52px;
     font-weight: 700;
   }
@@ -612,6 +613,17 @@ textarea {
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
+  }
+
+  .skills-item ul > * {
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .skills-item > *:nth-child(1) {
+    margin-left: 10px;
   }
 
   .contact-text,
