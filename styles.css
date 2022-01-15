@@ -67,10 +67,33 @@ main > * {
   line-height: 16px;
   text-decoration: none;
   color: #fff;
+  animation: logo-animation 2s;
+}
+
+@keyframes logo-animation {
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 nav a {
   display: none;
+}
+
+nav,
+.name-info,
+.box-tools {
+  animation: headline 2s ease-out;
+}
+
+@keyframes headline {
+  0% {
+    transform: scale(0.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*
