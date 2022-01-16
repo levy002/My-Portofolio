@@ -1,11 +1,11 @@
 body {
   background-image:
-    url(/images/Ellipse\ 18.png),
-    url(/images/Ellipse\ 19.png),
-    url(/images/ellipse\ 30.png),
-    url(/images/Ellipse\ 31.png),
-    url(/images/Ellipse\ 32.png),
-    url(/images/Ellipse\ 33.png);
+    url(images/Ellipse\ 18.png),
+    url(images/Ellipse\ 19.png),
+    url(images/ellipse\ 30.png),
+    url(images/Ellipse\ 31.png),
+    url(images/Ellipse\ 32.png),
+    url(images/Ellipse\ 33.png);
   background-position:
     top left,
     right 0% top 10%,
@@ -448,7 +448,7 @@ textarea {
   }
 
   body {
-    background: url(/images/two-circles-header.png);
+    background: url(images/two-circles-header.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -461,7 +461,7 @@ textarea {
   }
 
   main {
-    background: url(/images/Group-elipse.png);
+    background: url(images/Group-elipse.png);
     background-repeat: no-repeat;
     background-position-y: 83%;
     background-size: 100% 55%;
