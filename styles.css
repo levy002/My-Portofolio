@@ -282,7 +282,6 @@ i {
 button {
   padding: 15px;
   border: 1px hidden;
-  outline: none;
   color: #edecff;
 }
 
@@ -378,42 +377,44 @@ footer a {
 
 #user-name-1 {
   padding: 10px;
-  outline: none;
   border: 1px hidden;
   background: #e5e5e5;
+  margin-bottom: 17px;
+  border-radius: 2px;
 }
 
 #user-name-2 {
   display: none;
 }
 
-#user-name-1 input[type="text"] {
-  padding: 5px;
+#user_name {
+  padding: 4px;
   background: #e5e5e5;
-  outline: none;
 }
 
 #email {
   padding: 10px;
   background: #f7f3ff;
+  margin-bottom: 17px;
+  border-radius: 2px;
 }
 
 input[type="email"] {
   background: #f7f3ff;
-  padding: 5px;
-  outline: none;
+  padding: 4px;
 }
 
 #user-message {
   padding: 10px;
   border: 1px hidden;
   background: #fff;
+  margin-bottom: 35px;
+  border-radius: 2px;
 }
 
 textarea {
   height: 120px;
   background: #fff;
-  outline: none;
 }
 
 .project-tools li {
@@ -690,18 +691,28 @@ textarea {
   }
 
   #user-name-2 {
-    display: contents;
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 15px;
   }
 
-  #user-name-2:nth-child(1) {
+  #user-name-2 > * {
+    flex: 1;
+    margin-bottom: 15px;
+  }
+
+  #user-name-2 label {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+
+  #first-name {
     color: #191765;
   }
 
   input[type="text"] {
-    padding: 15px;
-    outline: none;
+    padding: 3px 0;
     color: #191765;
     font-size: 17px;
     line-height: 20px;
@@ -711,6 +722,7 @@ textarea {
 
   #email {
     border-radius: 2px;
+    margin-bottom: 15px;
   }
 
   input[type="email"],
@@ -719,7 +731,6 @@ textarea {
     font-size: 17px;
     line-height: 20px;
     font-weight: 400;
-    outline: none;
   }
 
   form button {
