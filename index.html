@@ -11,22 +11,52 @@
     ></script>
     <script src="https://kit.fontawesome.com/07a5c1782d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css">
   </head>
   <body>
     <header class="header-box">
-      <a href="#" id="logo">Welcome</a>
+      <a href="#" id="logo">U.Levy</a>
       <nav class="nav-container">
-        <img src="images/Menu-icon.png" alt="Menu icon" />
-        <a href="#">Portofolio</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <div class="menu-icon">
+          <img src="images/Menu-icon.png" alt="Menu icon" id="hamburger-icon"/>
+        </div>
+        
+        <div class="nav-links">
+        <a href="#projects">Portofolio</a>
+        <a href="#about-me">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>
         </a>
+        </div>
       </nav>
     </header>
+    <section class="mobile-menu">
+        <a href="#" id="cross-arrow">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+          <ul>
+            <li>
+              <a href="#projects">Portfolio</a>
+              <a href="#projects">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+              <a href="#contact">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#about-me">About</a>
+              <a href="#about-me">
+                <i class="fa fa-chevron-right"></i>
+              </a>
+            </li>
+          </ul>
+    </section>
     <main>
-      <div class="headline-wrapper">
+      <div class="headline-wrapper" id="about-me">
       <section class="name-info">
         <h1>Ukwishaka Levy</h1>
         <h2>Software Developer</h2>
@@ -114,7 +144,7 @@
           <span>Work</span>
         </div>
       </div>
-      <section class="work">
+      <section class="work" id="projects">
         <div id="work-title">
           <h2>MY RECENT <span id="break">WORK</span></h2>
           <img src="images/vector-line.png" alt="line" />
@@ -250,8 +280,9 @@
           </li>
         </ul>
       </section>
+
     </main>
-    <footer>
+    <footer id="contact">
       <div class="contact-text">
         <h2>CONTACT US</h2>
         <h2>Let's chat!</h2>
@@ -327,8 +358,9 @@
             </a>
           </li>
         </ul>
-        <a href="#">emailhere@email.com</a>
+        <a href="#">levy.ukwi002@gmail.com</a>
       </div>
     </footer>
+    <script src="mobile-menu.js"></script>
   </body>
 </html>
