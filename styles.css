@@ -20,16 +20,7 @@ body {
     auto 7%,
     63% auto,
     50% auto;
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat;
+  background-repeat: no-repeat;
   background-color: #191765;
   box-sizing: border-box;
   font-family: sans-serif, Roboto;
@@ -56,7 +47,7 @@ main > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+   width: 90%;
   margin: 0 auto;
 }
 
@@ -76,8 +67,71 @@ main > * {
   }
 }
 
-nav a {
+.nav-links {
   display: none;
+}
+
+.mobile-menu {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  flex-direction: column;
+  gap: 40px;
+  background-image: url(images/mobile-menu-shapes.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 90%;
+  background-color: #191765;
+  
+}
+
+#cross-arrow {
+ text-align: right;
+ align-self:flex-end;
+ width: 80%;
+ margin: 10% auto 0;
+ cursor: pointer;
+}
+
+#cross-arrow i:hover {
+  color: #7d73fc;
+}
+
+.mobile-menu ul {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.mobile-menu ul > * {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.mobile-menu a {
+  color:#EDECFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+  color: #7d73fc;
+  text-decoration: underline;
+}
+
+.mobile-menu ul i {
+  color: #7d73fc;
+}
+
+.mobile-menu ul i:hover {
+  color: #EDECFF;
 }
 
 nav,
@@ -470,13 +524,13 @@ textarea {
     margin: 0;
   }
 
-  .nav-container {
+  .nav-links {
     display: flex;
     flex-direction: row;
     gap: 25px;
   }
 
-  .nav-container a {
+  nav a {
     display: flex;
     justify-content: space-between;
     color: #fff;
@@ -488,7 +542,16 @@ textarea {
     text-decoration: none;
   }
 
-  .nav-container img {
+  nav a:active {
+    color: #7d73fc;
+    text-decoration: underline;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
