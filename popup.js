@@ -1,22 +1,22 @@
 const projects = [
-    {
-      project: {
-        title: 'Multi-post story',
-        src: 'images/appImage.png',
-        description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
-        technologies: ['html', 'Ruby on rails', 'css', 'Github'],
-        seeLiveLink: '#',
-        seeSourceLink: '#',
-      },
+  {
+    project: {
+      title: 'Multi-post story',
+      src: 'images/appImage.png',
+      description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
+      technologies: ['html', 'Ruby on rails', 'css', 'Github'],
+      seeLiveLink: '#',
+      seeSourceLink: '#',
     },
-  ];
-  const work = document.querySelector('.project');
-  const popUp = document.createElement('section');
-  popUp.classList.add('modal-container');
-  function popUpDesktop() {
-    popUp.style.display = 'block';
-    work.appendChild(popUp);
-    popUp.innerHTML = `
+  },
+];
+const work = document.querySelector('.project');
+const popUp = document.createElement('section');
+popUp.classList.add('modal-container');
+function popUpDesktop() {
+  popUp.style.display = 'block';
+  work.appendChild(popUp);
+  popUp.innerHTML = `
     <div class="modal-content">
     <div class="modal-header">
       <h2>${projects[0].project.title}</h2>
@@ -51,16 +51,16 @@ const projects = [
     </div>
   </div>
   </section>`;
-    document.addEventListener('click', (event) => {
-      if (event.target.id === 'close-popUp') {
-        popUp.style.display = 'none';
-      }
-    });
-  }
-  function popUpMobile() {
-    popUp.style.display = 'block';
-    work.appendChild(popUp);
-    popUp.innerHTML = `
+  document.addEventListener('click', (event) => {
+    if (event.target.id === 'close-popUp') {
+      popUp.style.display = 'none';
+    }
+  });
+}
+function popUpMobile() {
+  popUp.style.display = 'block';
+  work.appendChild(popUp);
+  popUp.innerHTML = `
     <div class="modal-content">
     <div class="modal-header">
       <h2>${projects[0].project.title}</h2>
@@ -96,14 +96,14 @@ const projects = [
     </div>
   </div>
   </section>`;
-    document.addEventListener('click', (event) => {
-      if (event.target.id === 'close-popUp') {
-        popUp.style.display = 'none';
-      }
-    });
-  }
-  const AllButtons = document.getElementsByClassName('see-project');
-  for (let i = 0; i < AllButtons.length; i += 1) {
-    AllButtons[i].addEventListener('click', popUpDesktop);
-    AllButtons[i].addEventListener('click', popUpMobile);
-  }
+  document.addEventListener('click', (event) => {
+    if (event.target.id === 'close-popUp') {
+      popUp.style.display = 'none';
+    }
+  });
+}
+const AllButtons = document.getElementsByClassName('see-project');
+for (let i = 0; i < AllButtons.length; i += 1) {
+  AllButtons[i].addEventListener('click', popUpDesktop);
+  AllButtons[i].addEventListener('click', popUpMobile);
+}
