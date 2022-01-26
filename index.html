@@ -295,37 +295,40 @@
       <form id="form"
         action="https://formspree.io/f/xbjwlnpa"
         method="post"
-        class="formar"
-      >
-          <label id="user-name-1" for="user_name">
+        class="formar">
+         <div class="userName">
+          <label id="user-name" for="user_name">
             <input type="text" placeholder="User name" maxlength="30" required id="user_name"/>
           </label>
-        <div id="user-name-2">
-            <label id="first-name" for="first_name">
-              <input type="text" placeholder="First name" maxlength="30" required id="first_name"/>
-            </label>
-            <label for="last_name" id="last-name">
-              <input type="text" placeholder="Last name" maxlength="30" required id="last_name"/>
-            </label>
-          </div>
-          <label id="email" for="user_email">
-            <input
-              type="email"
-              placeholder="jeremy@gmail.com"
-              name="user_email"
-              id="user_email"
-              required
-            />
+          
+          <label for="last_name">
+            <input type="text" placeholder="Last name" maxlength="30" id="last_name"/>
           </label>
-          <div id="user-message">
-            <textarea
-              placeholder="Write your message here"
-              maxlength="500"
-            ></textarea>
-          </div>
-        <div>
-          <button value="Submit" type="submit">Send</button>
+          
         </div>
+            
+          <label for="user_email">
+            <input
+            type="email"
+            placeholder="jeremy@gmail.com"
+            name="user_email"
+            id="user_email"
+            required
+          />
+          </label>
+           
+          <div class="form-message"> 
+            <textarea
+            placeholder="Write your message here"
+            id="user-message"
+            maxlength="500"
+          ></textarea>
+          </div>
+           <div class="form-btn">
+            <button value="Submit" type="submit" id="formButton">Send</button>
+            <p class="form-error"></p>
+           </div>
+         
       </form>
       <div id="footer-line">
         <img src="images/vector-line.png" alt="line" />
@@ -363,5 +366,6 @@
     </footer>
     <script src="mobile-menu.js"></script>
     <script src="popup.js"></script>
+    <script src="validation.js"></script>
   </body>
 </html>

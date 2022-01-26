@@ -308,19 +308,10 @@ form {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: center;
+  justify-content: center;
   width: 90%;
   margin: 50px auto;
-}
-
-form input,
-textarea {
-  width: 100%;
-  border: 1px hidden;
-  color: #81818c;
-  font-size: 15px;
-  line-height: 24px;
-  font-family: "Roboto", sans-serif;
+  gap: 20px;
 }
 
 form ul,
@@ -362,46 +353,62 @@ footer a {
   font-family: "Roboto", sans-serif;
 }
 
-#user-name-1 {
-  padding: 10px;
-  border: 1px hidden;
-  background: #e5e5e5;
-  margin-bottom: 17px;
+.userName,
+textarea {
+  margin: 0 auto;
+  width: 100%;
+}
+
+label {
+  display: flex;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  color: #81818c;
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
   border-radius: 2px;
+  border: 1px hidden #fff;
 }
 
-#user-name-2 {
-  display: none;
+input:focus {
+  background-color: #f7f3ff;
+  color: #191765;
 }
 
-#user_name {
-  padding: 4px;
-  background: #e5e5e5;
+#last_name {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  bottom: 20px;
 }
 
-#email {
-  padding: 10px;
-  background: #f7f3ff;
-  margin-bottom: 17px;
-  border-radius: 2px;
-}
-
-input[type="email"] {
-  background: #f7f3ff;
-  padding: 4px;
-}
-
-#user-message {
-  padding: 10px;
-  border: 1px hidden;
-  background: #fff;
-  margin-bottom: 35px;
-  border-radius: 2px;
+.form-message {
+  display: flex;
 }
 
 textarea {
-  height: 120px;
+  border: 1px hidden;
   background: #fff;
+  height: 120px;
+  color: #81818c;
+}
+
+.form-btn button {
+  padding: 15px 50px;
+}
+
+.form-error {
+  display: none;
+  color: rgb(240, 34, 34);
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
 
 .project-tools li {
@@ -701,21 +708,15 @@ textarea {
     font-weight: 500;
   }
 
-  .skills-item ul > * {
-    font-size: 14px;
-    line-height: 28px;
-    font-weight: 400;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .skills-item > *:nth-child(1) {
-    margin-left: 10px;
-  }
-
   .contact-text,
   form {
     width: 55%;
     margin-bottom: 80px;
+  }
+
+  #last_name {
+    position: static;
+    opacity: 1;
   }
 
   .contact-text h2:nth-child(1) {
@@ -748,55 +749,27 @@ textarea {
     margin-top: 30px;
   }
 
-  #user-name-1 {
-    display: none;
-  }
-
-  #user-name-2 {
+  .userName {
     display: flex;
-    justify-content: space-between;
     gap: 15px;
   }
 
-  #user-name-2 > * {
+  .userName > * {
     flex: 1;
-    margin-bottom: 15px;
   }
 
-  #user-name-2 label {
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 2px;
-  }
-
-  #first-name {
-    color: #191765;
-  }
-
-  input[type="text"] {
-    padding: 3px 0;
-    color: #191765;
-    font-size: 17px;
-    line-height: 20px;
+  .skills-item ul > * {
+    font-size: 14px;
+    line-height: 28px;
     font-weight: 400;
-    border-radius: 2px;
+    font-family: "Roboto", sans-serif;
   }
 
-  #email {
-    border-radius: 2px;
-    margin-bottom: 15px;
+  .skills-item > *:nth-child(1) {
+    margin-left: 10px;
   }
 
-  input[type="email"],
-  textarea {
-    color: #6d6c70;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 400;
-  }
-
-  form button {
-    padding: 12px 50px;
+  .form-btn button {
     font-weight: 500;
     font-size: 15px;
     line-height: 24px;
