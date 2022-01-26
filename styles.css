@@ -403,6 +403,7 @@ textarea {
 }
 
 .form-error {
+  display: none;
   color: rgb(240, 34, 34);
   font-size: 15px;
   line-height: 24px;
