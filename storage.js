@@ -14,3 +14,15 @@ function setStorage() {
   useremail.value = currentEmail;
   userMessage.value = currentMessage;
 }
+
+function populateStorage() {
+  localStorage.setItem('name', userNames.value);
+  localStorage.setItem('lastName', lastName.value);
+  localStorage.setItem('email', useremail.value);
+  localStorage.setItem('message', userMessage.value);
+  setStorage();
+}
+userMessage.onchange = populateStorage;
+useremail.onchange = populateStorage;
+lastName.onchange = populateStorage;
+userNames.onchange = populateStorage;
