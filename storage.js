@@ -20,7 +20,8 @@ if (localStorage.getItem('formData') != null) {
   lastName.value = formData.lastName;
 }
 
-form.addEventListener('change', () => {
+form.addEventListener('change', (e) => {
+  e.preventDefault();
   formData.firstName = userNames.value;
   formData.email = useremail.value;
   formData.message = userMessage.value;
