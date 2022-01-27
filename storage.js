@@ -3,27 +3,27 @@ const lastName = document.getElementById('last_name');
 const useremail = document.getElementById('user_email');
 const userMessage = document.getElementById('user-message');
 
-function populateStorage() {
-    let formData = {
-        firstName: userNames.value,
-        lastName: lastName.value,
-        email: useremail.value,
-        message: userMessage.value
-    }
-    localStorage.setItem('userData', JSON.stringify(formData));
-    let savedFormData = localStorage.getItem('userData');
-    savedFormData = JSON.parse(savedFormData);
+let formData = {
+  firstName: '',
+  email: '',
+  message: '',
+  lastName: '',
+};
+
+const form = document.querySelector('form');
+
+if (localStorage.getItem('formData') != null) {
+  formData = JSON.parse(localStorage.getItem('formData'));
+  userNames.value = formData.firstName;
+  useremail.value = formData.email;
+  userMessage.value = formData.message;
+  lastName.value = formData.lastName;
 }
 
-window.onload = () => {
-    let savedFormData = localStorage.getItem('userData');
-    savedFormData = JSON.parse(savedFormData);
-    if(savedFormData !== null) {
-        userNames.value = savedFormData.firstName;
-        lastName.value = savedFormData.lastName;
-        useremail.value = savedFormData.email;
-        userMessage.value = savedFormData.message
-    }
-    populateStorage();
-}
- 
+form.addEventListener('change', () => {
+  formData.firstName = userNames.value;
+  formData.email = useremail.value;
+  formData.message = userMessage.value;
+  formData.lastName = lastName.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
