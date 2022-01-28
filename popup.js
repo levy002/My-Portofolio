@@ -128,6 +128,10 @@ function popUpMobile(cardNumber) {
 }
 
 for (let i = 0; i < AllButtons.length; i += 1) {
-AllButtons[i].addEventListener('click', popUpDesktop(i));
-  AllButtons[i].addEventListener('click', popUpMobile(i));
+AllButtons[i].addEventListener('click', () => {
+  popUpDesktop(i);
+ });
+AllButtons[i].addEventListener('click', () => {
+  popUpMobile(i);
+ });
 }
