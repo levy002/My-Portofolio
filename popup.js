@@ -1,11 +1,11 @@
 const projects = [
   {
-    title: 'Multi-post story1',
-    src: 'images/appImage.png',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
-    technologies: ['html', 'Ruby on rails', 'css', 'Github'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    title: 'Awesome-Books',
+    src: 'images/collection.png',
+    description:'Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.',
+    technologies: ['Javascript', 'Html', 'css', 'Webpack'],
+    seeLiveLink: 'https://levy002.github.io/Awesome-books-ES6/',
+    seeSourceLink: 'https://github.com/levy002/Awesome-books-ES6',
   },
   {
     title: 'Multi-post story2',
@@ -50,7 +50,7 @@ function popUpDesktop(cardNumber) {
       <img src=${projects[cardNumber].src} alt="App Image">
     </div>
     <div class="modal-description">
-      <p>${projects[cardNumber].description[0]}</p>
+      <p>${projects[cardNumber].description}</p>
     </div>
     <div class="modal-technologies">
       <ul class="project-tools">
@@ -94,8 +94,7 @@ function popUpMobile(cardNumber) {
       <img src=${projects[cardNumber].src} alt="App Image">
     </div>
     <div class="modal-description">
-      <p>${projects[cardNumber].description[0]}</p>
-      <p>${projects[cardNumber].description[1]}</p>
+      <p>${projects[cardNumber].description}</p>
     </div>
     <div class="modal-technologies">
       <ul class="project-tools">
