@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Awesome-Books',
     src: 'images/awesomeBooks.png',
-    description:'Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.',
+    description: 'Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.',
     technologies: ['Javascript', 'Html', 'css', 'Webpack'],
     seeLiveLink: 'https://awesome-book-202.netlify.app/',
     seeSourceLink: 'https://github.com/levy002/Awesome-books-ES6',
@@ -10,7 +10,7 @@ const projects = [
   {
     title: 'Math-Magician',
     src: 'images/math-magician.png',
-    description: ["Math magicians is a single page app for all mathematics lovers. Math Magicians allow users to perform simple calculations and It generates mathematics quotes."],
+    description: ['Math magicians is a single page app for all mathematics lovers. Math Magicians allow users to perform simple calculations and It generates mathematics quotes.'],
     technologies: ['React.js', 'CSS', 'Jest', 'Webpack'],
     seeLiveLink: 'https://math-magician-202.netlify.app/',
     seeSourceLink: 'https://github.com/levy002/Math-Magician',
@@ -18,7 +18,7 @@ const projects = [
   {
     title: 'ShowTime',
     src: 'images/showtime.png',
-    description: ["ShowTime is a web application based on an external TV Maze API. The API provides data about TV Shows. We then built the webapp around it. The webapp has 2 user interfaces (pages): The Homepage and the Comment modal. On the Homepage, each Show can be liked and commented on."],
+    description: ['ShowTime is a web application based on an external TV Maze API. The API provides data about TV Shows. We then built the webapp around it. The webapp has 2 user interfaces (pages): The Homepage and the Comment modal. On the Homepage, each Show can be liked and commented on.'],
     technologies: ['JavaScript', 'CSS', 'Jest', 'Webpack'],
     seeLiveLink: 'https://show-time-202.netlify.app/',
     seeSourceLink: 'https://github.com/levy002/ShowTime',
@@ -26,7 +26,7 @@ const projects = [
   {
     title: 'Multi-post story4',
     src: 'images/bookstore.png',
-    description: ["Bookstore-CMS is an SPA made for all the book lovers. It enables users to track the book progress, add new book and delete book. "],
+    description: ['Bookstore-CMS is an SPA made for all the book lovers. It enables users to track the book progress, add new book and delete book.'],
     technologies: ['React.js', 'Redux', 'Tailwind', ''],
     seeLiveLink: 'https://bookstore-cms-202.netlify.app/',
     seeSourceLink: 'https://github.com/levy002/BookStore--CMS',
@@ -133,4 +133,4 @@ for (let i = 0; i < AllButtons.length; i += 1) {
   AllButtons[i].addEventListener('click', () => {
     popUpMobile(i);
   });
-} 
+}
