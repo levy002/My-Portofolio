@@ -1,35 +1,35 @@
 const projects = [
   {
     title: 'Awesome-Books',
-    src: 'images/collection.png',
+    src: 'images/awesomeBooks.png',
     description:'Personal library which allow user to add name of the book and at the same time with the name of the author. User is able to Add new book and Delete book. This app allows user to store all changes in Local storage so user can be able to see his/her stored data anytime.',
     technologies: ['Javascript', 'Html', 'css', 'Webpack'],
-    seeLiveLink: 'https://levy002.github.io/Awesome-books-ES6/',
+    seeLiveLink: 'https://awesome-book-202.netlify.app/',
     seeSourceLink: 'https://github.com/levy002/Awesome-books-ES6',
   },
   {
-    title: 'Multi-post story2',
-    src: 'images/appImage.png',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
-    technologies: ['html', 'Ruby on rails', 'css', 'Github'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    title: 'Math-Magician',
+    src: 'images/math-magician.png',
+    description: ["Math magicians is a single page app for all mathematics lovers. Math Magicians allow users to perform simple calculations and It generates mathematics quotes."],
+    technologies: ['React.js', 'CSS', 'Jest', 'Webpack'],
+    seeLiveLink: 'https://math-magician-202.netlify.app/',
+    seeSourceLink: 'https://github.com/levy002/Math-Magician',
   },
   {
-    title: 'Multi-post story3',
-    src: 'images/appImage.png',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
-    technologies: ['html', 'Ruby on rails', 'css', 'Github'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    title: 'ShowTime',
+    src: 'images/showtime.png',
+    description: ["ShowTime is a web application based on an external TV Maze API. The API provides data about TV Shows. We then built the webapp around it. The webapp has 2 user interfaces (pages): The Homepage and the Comment modal. On the Homepage, each Show can be liked and commented on."],
+    technologies: ['JavaScript', 'CSS', 'Jest', 'Webpack'],
+    seeLiveLink: 'https://show-time-202.netlify.app/',
+    seeSourceLink: 'https://github.com/levy002/ShowTime',
   },
   {
     title: 'Multi-post story4',
-    src: 'images/appImage.png',
-    description: ["Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble.", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe."],
-    technologies: ['html', 'Ruby on rails', 'css', 'Github'],
-    seeLiveLink: '#',
-    seeSourceLink: '#',
+    src: 'images/bookstore.png',
+    description: ["Bookstore-CMS is an SPA made for all the book lovers. It enables users to track the book progress, add new book and delete book. "],
+    technologies: ['React.js', 'Redux', 'Tailwind', ''],
+    seeLiveLink: 'https://bookstore-cms-202.netlify.app/',
+    seeSourceLink: 'https://github.com/levy002/BookStore--CMS',
   },
 ];
 
@@ -111,10 +111,10 @@ function popUpMobile(cardNumber) {
     </div>
     <div class="modal-btns">
       <button>
-        <a href="${projects[cardNumber].seeLiveLink}">See Live <img src="images/see-live-Icon.png" alt="See live"></i></a>
+        <a href="${projects[cardNumber].seeLiveLink}>See Live <img src="images/see-live-Icon.png" alt="See live"></i></a>
       </button>
       <button>
-        <a href="${projects[cardNumber].seeSourceLink}">See Source <img src="images/Github.png" alt="Github icon"></a>
+        <a href="${projects[cardNumber].seeSourceLink}>See Source <img src="images/Github.png" alt="Github icon"></a>
       </button>
     </div>
   </div>
