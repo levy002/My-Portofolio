@@ -13,7 +13,7 @@
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
   width: 85%;
-  margin: 0 auto;
+  margin: 50px auto;
   border: 1px solid #fff;
 }
 
@@ -124,8 +124,8 @@
   }
 
   .modal-content {
-    height: 90%;
-    margin: 13% auto;
+    height: 90vh;
+    margin: 5vh auto;
   }
 
   .modal-header {
@@ -148,7 +148,7 @@
 
   .modal-image img {
     width: 100%;
-    height: 181px;
+    height: 300px;
   }
 
   .modal-description {
@@ -159,14 +159,6 @@
   .modal-description p {
     font-size: 14px;
     line-height: 24px;
-  }
-
-  .modal-description p:nth-child(1) {
-    display: none;
-  }
-
-  .modal-description p:nth-child(2) {
-    display: block;
   }
 
   .modal-technologies {
