@@ -126,6 +126,7 @@
   .modal-content {
     height: 90vh;
     margin: 5vh auto;
+    overflow: auto;
   }
 
   .modal-header {
