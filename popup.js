@@ -1,5 +1,15 @@
 const projects = [
   {
+    title: 'Doctors',
+    src: 'images/doctors.png',
+    description: [
+      'Doctor Appointment is a full stack application for book an appointment with doctor. This applications is responsive and users can load, create, and delete doctors and appointments. Users need to sign up or sign in to access application. They can sign up or sign in using the sign up and login forms.',
+    ],
+    technologies: ['React', 'Rails', 'Redux', 'CSS'],
+    seeLiveLink: 'https://appointment-app-frontend.netlify.app/',
+    seeSourceLink: 'https://github.com/ridaarif98/doctors_appointment_front_end',
+  },
+  {
     title: 'Awesome-Books',
     src: 'images/awesomeBooks.png',
     description:
@@ -9,14 +19,14 @@ const projects = [
     seeSourceLink: 'https://github.com/levy002/Awesome-books-ES6',
   },
   {
-    title: 'Math-Magician',
-    src: 'images/math-magician.png',
+    title: 'TRAnzKT',
+    src: 'images/TRanzakt.png',
     description: [
-      'Math magicians is a single page app for all mathematics lovers. Math Magicians allow users to perform simple calculations and It generates mathematics quotes.',
+      'TRAnzKT App is a mobile web application that allows the user to manage his/her budget: they have a list of transactions associated with a category, so that the user can see how much money they spend and on a particular category.',
     ],
-    technologies: ['React.js', 'CSS', 'Jest', 'Webpack'],
-    seeLiveLink: 'https://math-magician-202.netlify.app/',
-    seeSourceLink: 'https://github.com/levy002/Math-Magician',
+    technologies: ['Rails', 'Tailwind', 'Rspec'],
+    seeLiveLink: 'dry-bastion-60998.herokuapp.com/',
+    seeSourceLink: 'https://github.com/levy002/budget-app',
   },
   {
     title: 'ShowTime',
